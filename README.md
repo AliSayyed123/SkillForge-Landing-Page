@@ -21,9 +21,9 @@ This project is built with:
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AliSayyed123/SkillForge-Landing-Page/main/public/Screenshot%2025-10-16%211655.png" alt="Landing Page Screenshot 3" width="800"/>
+  <img src="https://raw.githubusercontent.com/AliSayyed123/SkillForge-Landing-Page/main/public/SkillForge1.png" alt="Landing Page Screenshot 3" width="800"/>
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AliSayyed123/SkillForge-Landing-Page/main/public/Screenshot%2025-10-16%211709.png" alt="Landing Page Screenshot 4" width="800"/>
+  <img src="https://raw.githubusercontent.com/AliSayyed123/SkillForge-Landing-Page/main/public/SkillForge2.png" alt="Landing Page Screenshot 4" width="800"/>
 </p>
