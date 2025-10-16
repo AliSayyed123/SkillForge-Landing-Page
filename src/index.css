@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 6% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 6% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 263 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --primary-glow: 270 80% 70%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 197 71% 52%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 6% 20%;
+    --input: 240 6% 20%;
+    --ring: 263 70% 60%;
+
+    --radius: 1rem;
+
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(217 71% 52%));
+    --gradient-hero: linear-gradient(135deg, hsl(263 70% 50% / 0.2), hsl(217 71% 52% / 0.2));
+    --shadow-3d: 0 20px 60px -10px hsl(263 70% 60% / 0.3);
+    --shadow-3d-hover: 0 30px 80px -10px hsl(263 70% 60% / 0.5);
+    --shadow-card: 0 10px 40px -10px hsl(240 10% 0% / 0.4);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .shadow-3d {
+    box-shadow: var(--shadow-3d);
+  }
+
+  .shadow-3d-hover {
+    box-shadow: var(--shadow-3d-hover);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
