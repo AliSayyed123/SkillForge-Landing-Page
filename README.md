@@ -10,3 +10,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 ## Landing Page Preview:
+![Uploading image.png…]()
