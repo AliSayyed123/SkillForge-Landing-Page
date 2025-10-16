@@ -10,4 +10,4 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 ## Landing Page Preview:
-![Landing Page Screenshot](https://raw.githubusercontent.com/your-username/your-repo/main/public/Screenshot%202025-10-16%20211415.png)
+![Landing Page Screenshot](public/Screenshot 2025-10-16 211709.png)
